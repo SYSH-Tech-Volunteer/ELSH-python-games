@@ -1,3 +1,4 @@
+
 import pygame
 import random
 from sys import exit
@@ -52,7 +53,7 @@ darkBlue = (9, 53, 174)
 purple = (182, 72, 242)
 darkPurple = (116, 12, 172)
 
-pygame.init()
+pygame.init() #初始化
 window = pygame.display.set_mode((780, 780))
 pygame.display.set_caption("Pygame貪食蛇")
 
