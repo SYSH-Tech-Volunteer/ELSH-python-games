@@ -337,6 +337,7 @@ print(i) # 會列出5
   * `pygame.MOUSEBUTTONDOWN`按下滑鼠按鍵
   * `pygame.MOUSEMOTION`移動滑鼠
   * `pygame.mouse.get_pos()`抓取滑鼠的位置
+---
 * 鍵盤
   * `pygame.KEYDOWN`按下鍵盤按鍵
   * `pygame.K_UP`上
