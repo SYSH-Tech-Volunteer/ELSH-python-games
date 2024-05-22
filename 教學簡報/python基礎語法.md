@@ -319,7 +319,7 @@ print(i) # 會列出5
 
 # 基本架構
 
-![bg pygame.png](img/pypygame.png)
+![bg pygame.png](img/pygame.png)
 
 ---
 
