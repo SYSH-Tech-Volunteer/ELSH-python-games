@@ -118,11 +118,44 @@ print(x)
 # 容器型態之一:list
 
 * 放多個資料的地方
-*  由中括號組成並以逗號隔開不同資料(型態可不同)
-*  索引值從0開始
+* 由**中**括號組成並以逗號隔開不同資料(型態可不同)
+* 索引值從0開始
 
 ```python
 i_am_list = []# 宣告一個變數叫i_am_list
+```
+
+---
+
+# 容器型態之二:tuple
+
+* 放多個資料的地方
+* 由**小**括號組成並以逗號隔開不同資料(型態可不同)
+* 索引值從0開始
+* 建立時就必須決定初執
+* 建立後就只能讀取值，不能再修改
+
+---
+
+```python
+>>> t = 12345, 54321, 'hello!'
+>>> t[0]
+12345
+>>> t
+(12345, 54321, 'hello!')
+>>> # 可以是巢狀的:
+... u = t, (1, 2, 3, 4, 5)
+>>> u
+((12345, 54321, 'hello!'), (1, 2, 3, 4, 5))
+>>> # 不能更改:
+... t[0] = 88888
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> # 但是可以包含list:
+... v = ([1, 2, 3], [3, 2, 1])
+>>> v
+([1, 2, 3], [3, 2, 1])
 ```
 
 ---
@@ -298,14 +331,31 @@ print(i) # 會列出5
 # 練習時間
 
 * 輸入為一個整數 n
-* 大於 0、整數、4和3的公倍數、小於 n，請輸出所有可能的數字。\
+* 大於 0、整數、4和3的公倍數、小於 n，請輸出所有可能的數字。
+
+---
+
+# 函式
+
+讓你的程式碼被重複的使用，並且提高維護性及可讀性
+
+用法：
+
+def 函式名稱(參數):
+    函式主體
+
+```python
+def greet(name):
+    """這個函式用於問候"""
+    print(f"Hello, {name}!")
+
+greet("Alice")  # Hello, Alice!
+greet("Bob")    # Hello, Bob!
+```
 
 ---
 
 # pygame
-
-## [簡報1](https://hackmd.io/@andy010629/r103KC6Iv)
-## [簡報2](https://hackmd.io/@Derek46518/HyZHsD0Qo)
 
 ---
 
@@ -349,3 +399,6 @@ print(i) # 會列出5
 # 圖形
 
 * 
+
+## [簡報1](https://hackmd.io/@andy010629/r103KC6Iv)
+## [簡報2](https://hackmd.io/@Derek46518/HyZHsD0Qo)
