@@ -1,8 +1,6 @@
-
 import pygame
 import random
 from sys import exit
-
 
 class Text:
     def __init__(self, txt, size, color, font):
@@ -13,7 +11,6 @@ class Text:
     def midleft(self, x, y):
         self.rect.midleft = (x, y)
         window.blit(self.surface, self.rect)
-
 
 class Snake:
     def __init__(self, c1, c2, head):
@@ -28,7 +25,6 @@ class Snake:
             self.head[0] += unit
             self.body.insert(0, list(self.head))
 
-
 class Fruit:
     def __init__(self):
         self.pos = [0, 0]
@@ -39,7 +35,6 @@ class Fruit:
                     random.randrange(0, canvas_y, unit)]
         if self.pos in snake.body:
             self.spawn()
-
 
 black = (0, 0, 0)
 grey = (85, 85, 85)
