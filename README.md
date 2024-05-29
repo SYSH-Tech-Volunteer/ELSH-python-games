@@ -9,3 +9,4 @@
 * 遊戲介紹: 40634
 * 貪吃蛇教學: 50838, 50710, 50607
 * 踩地雷教學: 50632, 50834, 50617
+  *簡報：https://www.canva.com/design/DAGF3clmJ9g/kH4A_50HPVcHWAxis1O7RQ/edit?utm_content=DAGF3clmJ9g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
