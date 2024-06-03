@@ -375,13 +375,26 @@ greet("Bob")    # Hello, Bob!
 
 # 座標
 
+數學的原點是在中心點。往右x增加，往上y增加。
+
+
+但是在程式裡面 原點是在「左上角」，且往下y增加。
+
 ![bg position.gif](img/position.gif)
 
 ---
 
 # 初始化
 
-
+```python
+pygame.init()
+# 設定視窗大小，可以改變參數設定成喜歡的大小
+DISPLAY = pygame.display.set_mode((800,600))
+# 設定標題
+pygame.display.set_caption("HELLO")
+# 這邊會顯示黑色，可以透過修改參數的方式改成自己喜歡的顏色
+DISPLAY.fill((0,0,0))
+```
 
 ---
 
@@ -404,7 +417,22 @@ greet("Bob")    # Hello, Bob!
 
 # 圖形
 
-* 
+* 線段
+* 多邊形
+* 方形
+* 圓形
+* 匯入圖片
+
+---
+
+## 
+
+pygame.draw.line( surface, color, ( x1, y1 ), ( x2, y2 ), width = 0 )
+surface : 想畫在哪個平面
+color : 顏色
+x1 跟 y1 : 起始位置的 x 和 y 座標
+x2 跟 y2 : 終點位置的 x 和 y 座標
+width : 粗度
 
 ---
 
