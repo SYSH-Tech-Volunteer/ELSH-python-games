@@ -389,11 +389,11 @@ greet("Bob")    # Hello, Bob!
 ```python
 pygame.init()
 # 設定視窗大小，可以改變參數設定成喜歡的大小
-DISPLAY = pygame.display.set_mode((800,600))
+display = pygame.display.set_mode((800,600))
 # 設定標題
 pygame.display.set_caption("HELLO")
 # 這邊會顯示黑色，可以透過修改參數的方式改成自己喜歡的顏色
-DISPLAY.fill((0,0,0))
+display.fill((0,0,0))
 ```
 
 ---
@@ -425,16 +425,41 @@ DISPLAY.fill((0,0,0))
 
 ---
 
-## 
+## 線段
 
-pygame.draw.line( surface, color, ( x1, y1 ), ( x2, y2 ), width = 0 )
-surface : 想畫在哪個平面
+`pygame.draw.line( surface, color, ( x1, y1 ), ( x2, y2 ), width = 0 )`
+surface : 想畫在哪個平面(剛剛的display)
 color : 顏色
 x1 跟 y1 : 起始位置的 x 和 y 座標
 x2 跟 y2 : 終點位置的 x 和 y 座標
 width : 粗度
 
 ---
+
+# 多邊形
+
+`pygame.draw.polygon( surface, color, points, width=0 )`
+
+points : 點座標集合，點越多就可以畫出越多邊 像是 [ ( 146, 0 ), ( 291, 106 ), ( 236, 277 ), ( 56, 277 ), ( 0, 106 ) ] 就可以畫出一個五邊形。
+width : ( 可以不用加，預設是0 ) 增加多邊形的粗度。
+width > 0 : 空心的多邊形，線段會因為 width 增加而加粗。
+width = 0 : 填滿的多邊形。
+width < 0 : 什麼都沒有，什麼都看不到。
+
+---
+
+# 方形
+`pygame.draw.rect(surface, color, rect)`
+
+rect : Rect物件，可以直接寫( x, y, width, height )
+x : 方形左上角的x座標
+y : 方形左上角的y座標
+width : 方形的長
+height : 方形的寬
+
+---
+
+# 
 
 # 資料來源
 
