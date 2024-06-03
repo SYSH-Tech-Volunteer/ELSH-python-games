@@ -379,6 +379,12 @@ greet("Bob")    # Hello, Bob!
 
 ---
 
+# 初始化
+
+
+
+---
+
 # 事件(pygame.event)
 
 * 退出
@@ -400,5 +406,9 @@ greet("Bob")    # Hello, Bob!
 
 * 
 
-## [簡報1](https://hackmd.io/@andy010629/r103KC6Iv)
-## [簡報2](https://hackmd.io/@Derek46518/HyZHsD0Qo)
+---
+
+# 資料來源
+
+* [https://hackmd.io/@andy010629/r103KC6Iv](https://hackmd.io/@andy010629/r103KC6Iv)
+* [https://hackmd.io/@Derek46518/HyZHsD0Qo](https://hackmd.io/@Derek46518/HyZHsD0Qo)
