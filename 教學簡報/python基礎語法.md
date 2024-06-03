@@ -355,6 +355,18 @@ greet("Bob")    # Hello, Bob!
 
 ---
 
+# class
+
+可以想成是自訂的資料型態，由變數組成
+
+---
+
+# 物件導向
+
+物件導向是一種程式設計的風格，跟它相反的叫做程序是導向
+
+---
+
 # pygame
 
 ---
@@ -456,6 +468,14 @@ x : 方形左上角的x座標
 y : 方形左上角的y座標
 width : 方形的長
 height : 方形的寬
+
+---
+
+# 圓形
+`pygame.draw.circle( surface, color, center_point, radius, width )`
+center_point : 中心點
+radius : 半徑
+width : 請參考多邊形的width
 
 ---
 
