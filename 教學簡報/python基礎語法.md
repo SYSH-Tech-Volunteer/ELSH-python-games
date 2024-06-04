@@ -361,7 +361,7 @@ greet("Bob")    # Hello, Bob!
 
 ``python
 class student:
-def __init__(self, number, name):
+def __init__(self, number, name): # 
     self.number = number
     self.name = name
 
@@ -456,43 +456,59 @@ display.fill((0,0,0))
 
 ## 線段
 
-`pygame.draw.line( surface, color, ( x1, y1 ), ( x2, y2 ), width = 0 )`
+```python
+pygame.draw.line( surface, color, ( x1, y1 ), ( x2, y2 ), width = 0 )
+'''
 surface : 想畫在哪個平面(剛剛的display)
 color : 顏色
 x1 跟 y1 : 起始位置的 x 和 y 座標
 x2 跟 y2 : 終點位置的 x 和 y 座標
 width : 粗度
+'''
+```
 
 ---
 
 # 多邊形
 
-`pygame.draw.polygon( surface, color, points, width=0 )`
-
+```python
+pygame.draw.polygon( surface, color, points, width=0 )
+'''
 points : 點座標集合，點越多就可以畫出越多邊 像是 [ ( 146, 0 ), ( 291, 106 ), ( 236, 277 ), ( 56, 277 ), ( 0, 106 ) ] 就可以畫出一個五邊形。
 width : ( 可以不用加，預設是0 ) 增加多邊形的粗度。
 width > 0 : 空心的多邊形，線段會因為 width 增加而加粗。
 width = 0 : 填滿的多邊形。
 width < 0 : 什麼都沒有，什麼都看不到。
+'''
+```
 
 ---
 
 # 方形
-`pygame.draw.rect(surface, color, rect)`
 
+```python
+pygame.draw.rect(surface, color, rect)
+'''
 rect : Rect物件，可以直接寫( x, y, width, height )
 x : 方形左上角的x座標
 y : 方形左上角的y座標
 width : 方形的長
 height : 方形的寬
+'''
+```
 
 ---
 
 # 圓形
-`pygame.draw.circle( surface, color, center_point, radius, width )`
+
+```python
+pygame.draw.circle( surface, color, center_point, radius, width )
+'''
 center_point : 中心點
 radius : 半徑
 width : 請參考多邊形的width
+'''
+```
 
 ---
 
