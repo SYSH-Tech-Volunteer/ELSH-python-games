@@ -361,13 +361,16 @@ greet("Bob")    # Hello, Bob!
 
 ``python
 class student:
-def __init__(self, number, name): # 
-    self.number = number
-    self.name = name
+    def __init__(self, number, name, score): # 
+        self.number = number
+        self.name = name
+        self.score = score
 
-def scored(self, score):
+    def get_score(self):
+        return self.score
 
-
+student st(100, "abc",50)
+print(st.get_score())
 ```
 
 ---
