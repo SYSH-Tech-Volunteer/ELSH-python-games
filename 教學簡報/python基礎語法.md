@@ -357,7 +357,18 @@ greet("Bob")    # Hello, Bob!
 
 # class
 
-可以想成是自訂的資料型態，由變數組成
+可以想成是自訂的資料型態，由變數和函式組成
+
+``python
+class student:
+def __init__(self, number, name):
+    self.number = number
+    self.name = name
+
+def scored(self, score):
+
+
+```
 
 ---
 
