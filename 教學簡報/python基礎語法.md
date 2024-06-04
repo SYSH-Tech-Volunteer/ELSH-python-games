@@ -418,7 +418,9 @@ display.fill((0,0,0))
   * `pygame.MOUSEBUTTONDOWN`按下滑鼠按鍵
   * `pygame.MOUSEMOTION`移動滑鼠
   * `pygame.mouse.get_pos()`抓取滑鼠的位置
+
 ---
+
 * 鍵盤
   * `pygame.KEYDOWN`按下鍵盤按鍵
   * `pygame.K_UP`上
@@ -478,8 +480,6 @@ radius : 半徑
 width : 請參考多邊形的width
 
 ---
-
-# 
 
 # 資料來源
 
