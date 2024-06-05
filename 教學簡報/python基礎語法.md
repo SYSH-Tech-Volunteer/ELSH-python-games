@@ -161,6 +161,9 @@ TypeError: 'tuple' object does not support item assignment
 ---
 
 # 運算子
+
+## 算術運算子
+
 * `+`加
 * `-`減
 * `*`乘
@@ -168,16 +171,22 @@ TypeError: 'tuple' object does not support item assignment
 * `%`取餘數
 * `**`指數
 
+`a=a+1`
+
+`a+=1`
+
+兩個一樣
+
 ---
 
 ## 關係運算子
 
 <	小於
-\>	大於	
-<=	小於等於	
+\>	大於
+<=	小於等於
 \>=	大於等於
-==	相等	
-!=	不相等	
+==	相等
+!=	不相等
 
 ---
 
