@@ -56,15 +56,15 @@ canvas_x = 720
 canvas_y = 630
 canvas = pygame.Surface((canvas_x, canvas_y))
 
-background = pygame.image.load("resources/background.png").convert()
-border = pygame.image.load("resources/border.png").convert()
-face = pygame.image.load("resources/face.png").convert_alpha()
-game_over = pygame.image.load("resources/game_over.png").convert_alpha()
+background = pygame.image.load("教學簡報/簡易遊戲code/snake/img/background.png").convert()
+border = pygame.image.load("教學簡報/簡易遊戲code/snake/img/border.png").convert()
+face = pygame.image.load("教學簡報/簡易遊戲code/snake/img/face.png").convert_alpha()
+game_over = pygame.image.load("教學簡報/簡易遊戲code/snake/img/game_over.png").convert_alpha()
 
 pygame.mixer.init()
-bgm = pygame.mixer.Sound("resources/bgm.wav")
-fruit_sfx = pygame.mixer.Sound("resources/fruit.wav")
-game_over_sfx = pygame.mixer.Sound("resources/game_over.wav")
+bgm = pygame.mixer.Sound("教學簡報/簡易遊戲code/snake/wav/bgm.wav")
+fruit_sfx = pygame.mixer.Sound("教學簡報/簡易遊戲code/snake/wav/fruit.wav")
+game_over_sfx = pygame.mixer.Sound("教學簡報/簡易遊戲code/snake/wav/game_over.wav")
 bgm.play(-1)
 
 game_speed = 10
