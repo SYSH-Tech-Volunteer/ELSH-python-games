@@ -15,7 +15,7 @@ BLACK = (0,0,0)
 pygame.init()
 screen = pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption("踩踩踩踩跟我踩")  # 設定名字
-minesweeper_img = pygame.image.load(os.path.join("img", "地雷.jpg")).convert()  # 引入照片(os.path是這個檔案(踩地雷)所在位置)
+minesweeper_img = pygame.image.load(os.path.join("教學簡報","簡易遊戲code","mineweeper","img", "地雷.jpg")).convert()  # 合併路徑
 pygame.display.set_icon(minesweeper_img)  # 把左上的小圖標改成上面引入的照片
 
 # 寫字
