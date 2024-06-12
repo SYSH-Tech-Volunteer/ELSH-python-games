@@ -368,29 +368,23 @@ greet("Bob")    # Hello, Bob!
 
 可以想成是自訂的資料型態，由變數和函式組成
 
-``python
-class student:
-    def __init__(self, number, name, score): # 
-        self.number = number
-        self.name = name
+```python
+class Student:                               # 建立一個較Student的類別，開頭習慣大寫
+    def __init__(self, number, name, score): # 初始化函式，宣告物件就會執行的函式
+        self.number = number                 # self代表物件本身，所有類別裡的函式都要有
+        self.name = name                     # 把自己的number name score 設成宣告時指定的
         self.score = score
 
-    def get_score(self):
-        return self.score
+    def get_number(self):                    # 自訂的函式
+        return self.number                   # 回傳自己的座號
 
-student st(100, "abc",50)
-print(st.get_score())
+    def get_score(self):                     # 自訂的函式
+        return self.score                    # 回傳自己的分數
+
+Student st1(100, "abc",50)
+Student st2(99, "def",60)
+print(st1.get_number(), st1.get_score())
 ```
-
----
-
-# 物件導向
-
-物件導向是一種程式設計的風格，跟它相反的叫做程序是導向
-
-程序式導向：從第一步一路寫到最後一步
-
-物件導向：把程式拆成幾個部分，每個部分都只住程式安排地做自己的任務，外界不需要管理面發生的事
 
 ---
 
