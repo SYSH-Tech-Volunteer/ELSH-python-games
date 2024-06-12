@@ -49,6 +49,8 @@ purple = (182, 72, 242)
 darkPurple = (116, 12, 172)
 
 pygame.init() #初始化
+window_x = 780 # 設定遊戲視窗大小
+window_y = 780
 window = pygame.display.set_mode((780, 780))
 pygame.display.set_caption("Pygame貪食蛇")
 
