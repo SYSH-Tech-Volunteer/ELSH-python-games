@@ -22,7 +22,7 @@ pygame.display.set_icon(minesweeper_img)  # 把左上的小圖標改成上面引
 font_name = pygame.font.match_font('arial')  # 選字體(arial大部分電腦都有)
 def draw_text(surf, text, size, x, y):  # surf是要顯示在哪裡,text是要顯示甚麼,size是字大小,xy是顯示的位置
     font = pygame.font.Font(font_name, size)  # 創文字物件
-    text_surface = font.render(text, True, BLACK)  # 把文字渲染出來(True的地方是讓字體看起來比較滑順)
+    text_surface = font.render(text, True, BLACK)  # 把文字轉成圖檔(True的地方是讓字體看起來比較滑順)
     text_rect = text_surface.get_rect()  # 文字定位
     text_rect.centerx = x
     text_rect.top = y  # 定位到輸進來的xy
