@@ -33,7 +33,7 @@ color: #fff
 * 直譯式程式語言
 * 易於學習、閱讀和維護
 * 廣泛應用於AI領域
-* 網路爬蟲
+* **做遊戲**
 
 ---
 
@@ -52,17 +52,19 @@ x = "我是變數"
 
 ---
 
-**輸出**
+## 輸入
+
+```python
+x = input("Hello world")
+```
+## 輸出
+
 
 ```python
 print("Hello world")
 ```
 
-**輸入**
 
-```python
-x = input("Hello world")
-```
 
 ---
 
@@ -70,6 +72,7 @@ x = input("Hello world")
 ### 題目:"輸出"一個叫做"x"的"變數"
 ### 輸出結果會是"Hello World"  
 * 在Hello World前後要加上'' or ""
+(表示是字元或是字串)
 
 ---
 
@@ -164,21 +167,21 @@ TypeError: 'tuple' object does not support item assignment
 
 ## 算術運算子
 
-* `+`加
+* `+`加  
 * `-`減
 * `*`乘
 * `/`除
 * `%`取餘數
 * `**`指數
 
-`a=a+1`
-
-`a+=1`
-
-兩個一樣
 
 ---
 
+# 簡寫
+### `x++`表示 `x=x+1`
+### `x--`表示 `x=x-1`
+
+---
 ## 關係運算子
 
 <	小於
@@ -192,15 +195,19 @@ TypeError: 'tuple' object does not support item assignment
 
 # 練習時間
 
-題目:鉛筆一支 5 元，一打 50 元。小明需要幫班上每位同學買一枝鉛筆，請問要多少錢？由於小明很注重環保，他絕不會為了省錢而多買任何不需要的東西。也就是說，小明買的鉛筆數量一定等於班上的人數。
+題目:咖啡一杯50元，現在商店有特價活動，咖啡第二杯只要20元，假設今天小白要買x杯，算出他最少只要付多少元
+* 請輸出:最少只要付多少?元
+
+提示:設x變數並且input 
+
 
 ---
 
 # code
 
 ```python
-a = int(input())
-print(a // 12 * 50 + a % 12 * 5)
+x = int(input())
+print(x/2*70+x%2*50)
 ```
 
 ---
@@ -231,7 +238,7 @@ print(a // 12 * 50 + a % 12 * 5)
 * if執行時會跳過elif和else
 * if是錯的-->判斷else-if，都錯-->執行else
 
-![bg right 90%](img/ifelse.webp)
+![bg right 90%](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlRt7WwPTGLYcUCpLr2Nx-2GYsRcvbEj_A4g&s)
 
 ---
 
@@ -250,29 +257,33 @@ else                # do this
 
 ---
 
-# 停車場盤子
-輸入停車時間(minute)
-停車一個小時40元,未滿一個小時收20元
-停車費最高收300元
-* 請輸出:要繳交?元
-
+# 成績問題
+輸入分數
+如果考`90-100` 輸出`A`
+如果考`80-89` 輸出`B`
+如果考`70-79`輸出`C`
+如果考`60-69` 輸出`D`
+如果低於`60分` 輸出``
+* 請輸出:(成績)
+提示:設score變數並且input 使用if else if...
 ---
 
+# 解答
 ```python
-time = int(input("請輸入停車分鐘數："))
+score = int(input())
 
-hr = time//60 #取整數 (小時) 
-mi = time % 60 #取餘數 (分鐘)
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+elif score >= 70:
+    print("C")
+elif score >= 60:
+    print("D")
+else:
+    print("完蛋被當了")
 
-if mi>=1:  #如果分鐘 大於或等於1分鐘加收20
-  pay=(hr*40+20)
-else: #其他沒有分鐘就算小時收費
-  pay=(hr*40)
 
-
-if pay>300:
-  pay=300
-print(f"要繳交{pay}元")
 ```
 
 ---
@@ -339,11 +350,20 @@ print(i) # 會列出5
 
 # 練習時間
 
-* 輸入為一個整數 n
-* 大於 0、整數、4和3的公倍數、小於 n，請輸出所有可能的數字。
+* 輸入為一個整數 
+* 大於 0、整數2的k次方(k為整數)、小於 ，請輸出所有可能的數字。
 
 ---
 
+# 解答
+```python
+x=int(input())
+n=2
+while n<x:
+  print(n)
+  n=n*2
+```
+---
 # 函式
 
 讓你的程式碼被重複的使用，並且提高維護性及可讀性
