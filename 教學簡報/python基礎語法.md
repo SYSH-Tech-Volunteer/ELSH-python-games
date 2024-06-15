@@ -178,8 +178,8 @@ TypeError: 'tuple' object does not support item assignment
 ---
 
 # 簡寫
-### `x++`表示 `x=x+1`
-### `x--`表示 `x=x-1`
+### `x+=1`表示 `x=x+1`
+### `x-=1`表示 `x=x-1`
 
 ---
 ## 關係運算子
