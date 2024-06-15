@@ -137,7 +137,7 @@ pygame.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption('Flappy Bird')
 
-BACKGROUND = pygame.image.load('教學簡報\\簡易遊戲code\\flappy\\assets\\sprites\\background.png')  #遊戲背景路徑
+BACKGROUND = pygame.image.load('教學簡報\\簡易遊戲code\\flappy\\assets\\sprites\\background-day.png')  #遊戲背景路徑
 BACKGROUND = pygame.transform.scale(BACKGROUND, (SCREEN_WIDTH, SCREEN_HEIGHT))  #遊戲背景大小
 BEGIN_IMAGE = pygame.image.load('教學簡報\\簡易遊戲code\\flappy\\assets\\sprites\\message.png').convert_alpha()  #遊戲初始介面圖片路徑
 GAME_OVER_IMAGE = pygame.image.load(gameover_image_path).convert_alpha()  #gameover 圖片路徑

@@ -139,7 +139,7 @@ while running:
                 x_new,y_new = xy_change(mouse_x,mouse_y)
                 if not detect_floor[x_new][y_new]:
                     flags[x_new][y_new] = not flags[x_new][y_new]
-                          
+
     # 畫面顯示
     if not game_over and not victory:
         screen.fill(WHITE)
